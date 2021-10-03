@@ -1,0 +1,320 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: swap;
+} 
+body{
+    
+  /* Preserve aspet ratio */
+    background-image: url("../images/back2.jpg");
+    background-color: #1e1f1d;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover; 
+    height:300%;
+    color: blanchedalmond;
+}
+/*--------Navigation bar-----------*/
+nav{
+  display: flex;
+  height: 75px;
+  background:#1485db;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px ;
+  
+  flex-wrap: wrap;
+}
+nav .logo{
+  color:white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 7px;
+}
+nav ul li a:active,
+nav ul li a:hover{
+  color: rgb(56, 50, 150);
+  background:white;
+}
+nav .iconbtn i{
+  color: white;
+  font-size: 20px;
+  cursor: auto;
+  display: none;
+}
+#icon{
+  display: none;
+}
+@media (max-width: 920px) {
+  .college{
+    display: block;
+  }
+  nav .iconbtn i{
+    display: block;
+  } 
+  nav ul{
+    position: fixed;
+    top: 50px;
+    left: -110%;
+    background: #1485db;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  #icon:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 30px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -110%;
+    display: block;
+    font-size: 17px;
+  }
+  #icon:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a:active,
+  nav ul li a:hover{
+    background: #1485db;
+    color: cyan;
+  }
+}
+/*-----------Home Page-------------*/
+#home{
+  margin: 30px;
+  text-align: justify;
+  font-size: 20px;
+}
+.profile-photo{
+align-content: center;
+}
+.profile{
+height: 240px;
+width: 240px;
+border-radius: 150px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 60px;
+background-color: white;
+
+}
+#welcome{
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 30px;
+color: aqua;
+margin-bottom: 20px;
+}
+#intro{
+text-align: justify;
+font-size: large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin: 30px;
+}
+#skills{
+text-align: justify;
+font-size: 30px;
+font-weight: bolder;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin: 40px;
+word-spacing: 1px;
+color:yellow;
+text-align: center;
+}
+#resume{
+
+margin-left: 20%;
+font-size:25px;
+color: yellow;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#resume-block{
+display: flex;
+margin-top:80px;
+width: auto;
+}
+#resume-btn{
+margin-left: 10px;
+height:fit-content;
+font-size: 20px;
+background: cyan;
+font-weight: 900;
+padding: 5px;
+text-align: center;
+text-emphasis: none;
+border-radius: 20px;
+
+}
+#resume-link{
+  
+color: blue;
+text-decoration: none;
+}
+table{
+border: 8px dotted cyan;
+height: fit-content;
+width: 60%;
+align-content: center;
+align-self: center;
+text-align: center;
+table-layout: auto;
+margin-left: auto;
+margin-right: auto;
+
+}
+td,tr{
+border: 1px dotted cyan;
+border-collapse: collapse;
+
+}
+
+
+/*----------Education Page----------*/
+#education{
+display: none;
+}
+.college{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 60px;
+align-items: center;
+}
+.college-photo{
+height: 300px;
+width: 300px;
+border-radius: 50%;
+display: block;
+background-color: white;
+margin-left: auto;
+margin-right: auto;
+
+}
+.college-heading{
+color: cyan;
+font-size: 20px;
+}
+.college-name{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+   text-align: center;
+   margin-top: 40px;
+
+}
+.college-descr{
+margin: 20px;
+
+}
+#website{
+
+margin-left: 35%;
+font-size:20px;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+#website-block{
+display: flex;
+margin-top:20px;
+width: auto;
+}
+#website-btn{
+margin-left: 10px;
+height:fit-content;
+font-size: 15px;
+background: cyan;
+font-weight: 900;
+padding: 5px;
+text-align: center;
+text-emphasis: none;
+border-radius: 20px;
+
+}
+#website-link{
+  
+color: blue;
+text-decoration: none;
+}
+
+
+ul,li{
+   text-align: center;
+   
+}
+
+#experience{
+display: none;
+}
+#contact{
+
+  margin-left: 15%;
+  font-size:25px;
+  color: yellow;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+  }
+#contact-info{
+  display: flex;
+  margin-top: 60px;
+}
+#social{
+  color: cyan;
+  font-size: 48px;
+  margin-left: 25px;
+}
+
+#project{
+display: none;
+}
+#proj-list{
+  list-style: none;
+}
+.proj{
+  background-color: cyan;
+  color: black;
+  font-weight: bolder;
+  height: fit-content;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  list-style: none;
+}
+.pro{
+  list-style-type: none;
+  list-style: none;
+}
+#greet-block{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+   text-align: center;
+   width: 30%;
+   background-color: rgb(88, 220, 224);
+   color: crimson;
+  font-family: Arial, Helvetica, sans-serif;
+}
