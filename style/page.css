@@ -16,89 +16,41 @@ body{
     height:300%;
     color: blanchedalmond;
 }
-/*--------Navigation bar-----------*/
-nav{
-  display: flex;
-  height: 75px;
-  background:#1485db;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px ;
+/*-------Nav bar---------*/
+
+
+.navbar{
+  background-color: #1485db;
   
-  flex-wrap: wrap;
+ 
+  
 }
-nav .logo{
-  color:white;
-  font-size: 30px;
-  font-weight: bolder;
+.navbar ul{
+  overflow: auto;
+  margin-left: 10px;
 }
-nav ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+.navbar li{
+  float:left;
+  list-style: none; 
+  margin: 13px;
+  text-align: center;
+  
 }
-nav ul li a{
-  color: white;
+.navbar li a{
+  padding: 3px 3px;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 12px;
-  border-radius: 7px;
-}
-nav ul li a:active,
-nav ul li a:hover{
-  color: rgb(56, 50, 150);
-  background:white;
-}
-nav .iconbtn i{
   color: white;
-  font-size: 20px;
-  cursor: auto;
-  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
 }
-#icon{
-  display: none;
+.navbar li a:hover{
+  color:#1485db;
+  background-color: white;
+  border-radius: 20px;
 }
-@media (max-width: 920px) {
-  .college{
-    display: block;
-  }
-  nav .iconbtn i{
-    display: block;
-  } 
-  nav ul{
-    position: fixed;
-    top: 50px;
-    left: -110%;
-    background: #1485db;
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-    display: block;
-  }
-  #icon:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 30px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -110%;
-    display: block;
-    font-size: 17px;
-  }
-  #icon:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a:active,
-  nav ul li a:hover{
-    background: #1485db;
-    color: cyan;
-  }
-}
+
+
 /*-----------Home Page-------------*/
 #home{
   margin: 30px;
@@ -317,4 +269,11 @@ display: none;
    background-color: rgb(88, 220, 224);
    color: crimson;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 992px){
+.navbar ul {
+  margin-left: 960px;
+  overflow: auto;
+}
 }

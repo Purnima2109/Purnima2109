@@ -6,25 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='style/page.css'>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Purnima Grover Webpage</title>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">Welcome</div>
-        <input type="checkbox" id="icon">
-        <label for="icon" class="iconbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href='javascript:;' onclick="page1()">Home</a></li>
+    <div>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href='javascript:;' onclick="page1()">Home</a></li>
             <li><a href='javascript:;' onclick="page2()">Education</a></li>
             <li><a href='javascript:;' onclick="page3()">Experience</a></li>
             <li><a href='javascript:;' onclick="page4()">Projects</a></li>
-        </ul>
-    </nav>
+                
+            </ul>
+        </nav>
+    
+</div>
     <div id="greet-block">
         <h3 id="greet"></h3>
         <h3 id="date"></h3>
@@ -85,7 +84,7 @@
             <div id="resume-block">
                 <h4 id="resume">Link to my Resume</h4>
                 <button id="resume-btn"><a href="https://drive.google.com/file/d/1efNnhALOXwk9GoITTqX3ZghtRrLlPRA3/view"
-                        target="_blank" id="resume-link">Download Resume</a></button>
+                        target="_blank" id="resume-link">Download</a></button>
             </div>
 
         </div>
@@ -242,10 +241,12 @@
                     </p>
                 </li>
                 <li class="pro">
-                    <p class="college-descr">Split data into train and test data. Create a subsample dataset with balanced class distribution by counting number of fradulent in train data</p>
+                    <p class="college-descr">Split data into train and test data. Create a subsample dataset with
+                        balanced class distribution by counting number of fradulent in train data</p>
                 </li>
                 <li class="pro">
-                    <p class="college-descr">Checking accuracy of model with different models like Logistic Regression, Decision Tree, Random Forest etc and choosing the best model according to accuracy</p>
+                    <p class="college-descr">Checking accuracy of model with different models like Logistic Regression,
+                        Decision Tree, Random Forest etc and choosing the best model according to accuracy</p>
                 </li>
                 <li class="pro"></li>
 
@@ -277,7 +278,7 @@
 
             </ul>
         </div>
-        
+
     </div>
     <script src="script/myjs.js"></script>
 </body>
